@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+
+* {
+  margin: 0px;
+  border: 0px;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 20px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  background-color: hsl(233, 47%, 7%);
+  color: white;
+}
+
+.image {
+  filter: opacity(0.5) drop-shadow(0 0 hsl(277, 64%, 61%)) saturate(2.7);
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.card-container {
+  display: flex;
+  width: 1250px;
+  height: 500px;
+  background-color: hsl(244, 38%, 16%);
+}
+
+.part-one {
+  width: 625px;
+}
+
+.part-two {
+  width: 625px;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+}
+
+.for-padding {
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 135px;
+}
+
+.stats {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.stats-one,
+.stats-two,
+.stats-three {
+  display: flex;
+  flex-direction: column;
+}
+
+h1,
+h2 {
+  font-family: "Inter", sans-serif;
+}
+
+.top > p {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 18px;
+}
+
+.stats-p {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  color: hsla(0, 0%, 100%, 0.6);
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-weight: bolder;
+  font-size: 45px;
+  margin-bottom: 30px;
+}
+
+h1 > span {
+  color: hsl(277, 64%, 61%);
+}
+
+h2 {
+  font-weight: bold;
+}
+
+@media (max-width: 750px) {
+  .card {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .card-container {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 950px;
+    width: 400px;
+    border-radius: 15px;
+  }
+
+  .image {
+    border-radius: 15px;
+  }
+
+  .part-one {
+    width: 400px;
+    height: 700px;
+  }
+
+  .part-two {
+    width: 400px;
+  }
+
+  .for-padding {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    text-align: center;
+  }
+
+  h1 {
+    font-weight: bolder;
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+
+  .stats {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .top > p {
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .stats-p {
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.6);
+    font-size: 17px;
+    text-transform: uppercase;
+  }
+}
